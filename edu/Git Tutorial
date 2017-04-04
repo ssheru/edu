@@ -1,14 +1,15 @@
 Git Tutorial
 
 Step 1:
-Create thh credntial and login to github.
+Setup process
+Create the credntial and login to github.
 Click on repository and crate new repository
-open terminal navigate to Downloads and crate a directory 
+open terminal navigate to Downloads and create a directory 
 cd directory
 
 Step 2:
+Git Initalise
 2.1 git init (from terminal cd in to the edureka directory)
-
 git init will create a .git folder in edureka folder so go to folder and check the .git folder(it will have other sub folders)
 
 EX:Shershahs-MacBook-Pro:Downloads sami$ mkdir edureka
