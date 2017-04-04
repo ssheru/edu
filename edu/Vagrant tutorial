@@ -1,0 +1,43 @@
+Vagrant tutorial:
+
+Step1:
+Download and Install virtual box
+Step2:
+Download and install vagrant from vagrantup.com
+Step3:
+After installing vagrant ,check the version from the terminal
+vagrant --version
+Step4:
+Adding the box to vitural box antey adding any os to the virtual box.
+vagrant box add anyname(name of the box) url (from where you want to download www.vagrantbox.es)
+vagrant box add cent7 https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.1.0/centos-7.0-x86_64.box
+check the box(os)added or not 
+vagrant box list
+step 5:
+Initlaise the box that you just added in a new folder--vagrant init boxname
+mkdir newcent
+cd newcent 
+vagrant init cent7
+when you do init a new file will be generated in newcent folder called vagrantfile
+step6:
+vagrant up--spin up the box
+vagrant suspend---used to suspend the active connection
+vagrant resume--used to resume the machine
+vagrant halt--shutdown the machine
+vagrant destroy--used to destroy machine/force shutdown.it remove the machine from teh virtualbox but still you have that vagrant file in the new folder(newcent).
+step7:
+now remote in to new machine that been spined up
+vagrant ssh
+you will  now be remote in your cent7 machine
+Shershahs-MacBook-Pro:newcent sami$ vagrant ssh
+Last login: Thu Jul 16 08:48:31 2015 from 10.0.2.2
+Welcome to your Vagrant-built virtual machine.
+[vagrant@localhost ~]$ pwd
+/home/vagrant
+[vagrant@localhost ~]$ cd /vagrant
+[vagrant@localhost vagrant]$ pwd
+/vagrant
+[vagrant@localhost vagrant]$ ls
+Vagrantfile
+
+
