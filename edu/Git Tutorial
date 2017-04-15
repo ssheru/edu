@@ -4,24 +4,23 @@ Step 1:
 Setup process
 Create the credntial and login to github.
 Click on repository and crate new repository
-open terminal navigate to Downloads and create a directory 
+open terminal navigate to Downloads and create a directory say sheru
 cd directory
 
 Step 2:
 Git Initalise
-2.1 git init (from terminal cd in to the edureka directory)
-git init will create a .git folder in edureka folder so go to folder and check the .git folder(it will have other sub folders)
+2.1 git init (from terminal cd in to the folder that you created i.e sheru)
+git init will create a .git folder in sheru folder so go to folder and check the .git folder(it will have other sub folders)
 
-EX:Shershahs-MacBook-Pro:Downloads sami$ mkdir edureka
-Shershahs-MacBook-Pro:Downloads sami$ cd edureka
+EX:Shershahs-MacBook-Pro:Downloads sami$ mkdir sheru
+Shershahs-MacBook-Pro:Downloads sami$ cd sheru
 Shershahs-MacBook-Pro:edureka sami$ git init
-Initialized empty Git repository in /Users/sami/Downloads/edureka/.git/
-Shershahs-MacBook-Pro:edureka sami$
+Initialized empty Git repository in /Users/sami/Downloads/sheru/.git/
+Shershahs-MacBook-Pro:sheru sami$
 
 Step 3:
 Pull request
 3.git remote add origin "https://github.com/ssheru/git-github1.git"
-
 This steps will establish the connection between you machine and remote github.
 to pull the data from the cental github repo you need to use pull command
 
@@ -40,9 +39,14 @@ From https://github.com/ssheru/git-github1
 Step 4:
 Go to the edureka folder and crate a text file from GUI
 4.1 git status
-4.2 git add name of the file -->git add edu  or for multiple git add -A and git status
+4.2 git add (name of the file -->git add edu  or for multiple git add -A and git status) or git add .(will add every change )
 4.3 git commit -m "commit message" -->git commit -m "first commit" for multiple commits git commit -a -m "message"
 4.4 git log
+4.5 git log -n 5 (this will show the last previous commits)
+4.6 git config --global user.name "shershah"
+4.7 git config --global user.email "ssheru@gmail.com"
+4.8 git config --list
+
 
 Step 5:
 Branching startergy
