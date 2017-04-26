@@ -17,7 +17,7 @@ step 5:
 Initlaise the box that you just added in a new folder--vagrant init boxname
 mkdir newcent
 cd newcent 
-vagrant init cent7
+vagrant init centos/7
 when you do init a new file will be generated in newcent folder called vagrantfile
 step6:
 vagrant up--spin up the box
