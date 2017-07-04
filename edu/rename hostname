@@ -1,0 +1,11 @@
+Renaming hostname in Linux
+Step1:
+login to the server and keyin hostname:
+it will display the name of the host
+/etc/sysconfig/network
+ HOSTNAME=myserver.domain.com
+  HOSTNAME=new server name
+  /etc/hosts
+  #127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+#::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+/etc/init.d/network restart
