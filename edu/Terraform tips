@@ -1,0 +1,21 @@
+Basic commands:
+        terraform version
+        terraform help
+        terraform init
+        terraform plan
+        terraform apply / terraform apply -auto-approve
+        terraform destroy / terraform destroy -auto-approve
+        terraform fmt
+        terraform validate ,checks the syntax
+user_data in terraform: to install an app using script calling using a file option
+ex: user_data = "${file(""install_httpd.sh)}"
+httpd.sh == yum install httpd -y 
+            systemctl start httpd
+            http enable on
+ To verify the result before execting use: terraform console
+                                            enter the query to execute
+                                            type exit to comeout
+ count = "3" is the attribute which describes number of machine thats needs to spinn up in terraform.
+ comments in Terraform:  # ,// , /* */
+ We have loops, lookup,map,
+ 
